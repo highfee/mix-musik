@@ -1,0 +1,98 @@
+.artist_container{
+    padding: 100px 40px;
+    width: 100%;
+    overflow: hidden;
+    &:hover{
+        overflow: auto;
+    }
+    .artist_profile{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap: 20px;
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            max-width: 500px;
+            line-height: 1.5;
+            color: #bbb;
+        }
+        button{
+            padding: 16px;
+            border: 0;
+            background: rgba($color: #282626, $alpha: .3);
+            color: #fff;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+    }
+    section{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;  
+    }
+    h1{
+        color: white;
+        margin-top: 30px;
+        font-size: 2.3rem;
+    }
+    .card{
+        height: 70px;
+        width: 100%;
+        background: rgba($color: #000000, $alpha: .5);;
+        border-radius: 50px;
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        > div:first-child{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        img{
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        div:has(.artist){
+            display: flex;
+            gap: 10px;
+            color: #999;
+        }
+        div:has(path){
+            cursor: pointer;
+            color: white;
+        }
+    }
+    .track_card{
+        width: 150px;
+        text-align: center;
+        color: white;
+         div:has(img){
+            width: 100%;
+            aspect-ratio: 1;
+            margin-bottom: 8px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 30px 0;
+            }
+         }
+         p:first-child{
+            font-size: 14px;
+            margin-bottom: 6px;
+         }
+         p:last-child{
+            font-size: 12px;
+            color: #a7a4a4;
+         }
+    }
+    .album_swiper{
+        margin-top: 40px;
+    }
+}
